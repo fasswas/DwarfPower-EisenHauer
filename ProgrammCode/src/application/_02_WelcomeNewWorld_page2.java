@@ -126,7 +126,10 @@ go.setOnAction(e -> {
 	{
 		missingName = false;
 		_03_0_GameView_page3 GO = new _03_0_GameView_page3();
-		GO.start(primaryStage);
+		try
+		{
+			GO.start(primaryStage);
+		} catch(Throwable e1){e1.printStackTrace();}
 	}
 	else{missingName = true; start(primaryStage);}
 });

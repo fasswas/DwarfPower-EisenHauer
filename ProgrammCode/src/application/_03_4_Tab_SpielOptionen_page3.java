@@ -150,7 +150,10 @@ GridPane.setHalignment(style2, HPos.LEFT);
 			_00_Launcher_page1.style3Selected = false;
 			_03_4_Tab_SpielOptionen_page3.style1.setSelected(true);
 			_03_0_GameView_page3 gameView = new  _03_0_GameView_page3();
-			gameView.start(primaryStage);
+			try
+			{
+				gameView.start(primaryStage);
+			} catch(Throwable e1){e1.printStackTrace();}
 		});
 		style2.setOnAction(e ->
 		{
@@ -160,7 +163,10 @@ GridPane.setHalignment(style2, HPos.LEFT);
 			_00_Launcher_page1.style3Selected = false;
 			_03_4_Tab_SpielOptionen_page3.style2.setSelected(true);
 			_03_0_GameView_page3 gameView = new  _03_0_GameView_page3();
-			gameView.start(primaryStage);
+			try
+			{
+				gameView.start(primaryStage);
+			} catch(Throwable e1){e1.printStackTrace();}
 		});
 		style3.setOnAction(e ->
 		{
@@ -170,7 +176,10 @@ GridPane.setHalignment(style2, HPos.LEFT);
 			_00_Launcher_page1.style3Selected = true;
 			_03_4_Tab_SpielOptionen_page3.style3.setSelected(true);
 			_03_0_GameView_page3 gameView = new  _03_0_GameView_page3();
-			gameView.start(primaryStage);
+			try
+			{
+				gameView.start(primaryStage);
+			} catch(Throwable e1){e1.printStackTrace();}
 		});
 		if(_00_Launcher_page1.style1Selected){_03_4_Tab_SpielOptionen_page3.style1.setSelected(true);scene.getStylesheets().add(getClass().getResource("Style 1.css").toExternalForm());}
 		if(_00_Launcher_page1.style2Selected){_03_4_Tab_SpielOptionen_page3.style2.setSelected(true);scene.getStylesheets().add(getClass().getResource("Style 2.css").toExternalForm());}
