@@ -95,5 +95,9 @@ public class Labyrinth
 	{
 		laby[y][x] = val;
 	}
+	
+	void setField(int[][] newField) {
+		this.laby = newField;
+	}
 
 } // end class
